@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+rocketmq:
+  name-server: 172.16.12.198:9876;172.16.13.76:9876
+  producer:
+    group: my-group
+    enable-msg-trace: true
+    retry-times-when-send-failed: 10
+    retry-times-when-send-async-failed: 10
